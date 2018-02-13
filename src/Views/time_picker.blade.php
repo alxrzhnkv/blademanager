@@ -1,5 +1,5 @@
 <div class="form-group{{ $errors->has($name) ? ' has-error' : '' }}">
-    @include('blade_manager::helpers.label')
+    @include('blade_manager::label')
 
     <input type="text"
            class="form-control timepicker {{ $class or '' }}"
@@ -9,5 +9,5 @@
             {{ isset($disabled) ? 'disabled' :  '' }}
     />
 
-    @include('blade_manager::helpers.error')
+    @include('blade_manager::error')
 </div>

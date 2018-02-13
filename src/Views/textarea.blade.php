@@ -1,5 +1,5 @@
 <div class="form-group{{ $errors->has($name) ? ' has-error' : '' }}">
-    @include('blade_manager::helpers.label')
+    @include('blade_manager::label')
 
     <textarea name="{{ $name }}"
               id="{{ $name }}"
@@ -11,5 +11,5 @@
         {{ ($required ?? false) ? 'required="true"' :  '' }}
     >{!! old($name, $value ?? null) !!}</textarea>
 
-    @include('blade_manager::helpers.error')
+    @include('blade_manager::error')
 </div>

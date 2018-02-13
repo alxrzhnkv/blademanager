@@ -1,7 +1,7 @@
 @php($multiple = isset($multiple) && $multiple == true)
 
 <div class="form-group{{ $errors->has($name) ? ' has-error' : '' }}">
-    @include('blade_manager::helpers.label')
+    @include('blade_manager::label')
 
     <select id="{{ $id or $name }}"
             name="{{ $name }}"
@@ -39,5 +39,5 @@
     </select>
 
     @php($name = str_replace(['[', ']'], '', $name))
-    @include('blade_manager::helpers.error')
+    @include('blade_manager::error')
 </div>

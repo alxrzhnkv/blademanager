@@ -1,5 +1,5 @@
 <div class="form-group{{ $errors->has($name) ? ' has-error' : '' }}">
-    @include('blade_manager::helpers.label')
+    @include('blade_manager::label')
 
     <input id="{{ $id ?? $name }}"
            type="{{ $type or 'text' }}"
@@ -14,5 +14,5 @@
             {!! isset($custom) ? implode($custom, ' ') : '' !!}
     />
 
-    @include('blade_manager::helpers.error')
+    @include('blade_manager::error')
 </div>

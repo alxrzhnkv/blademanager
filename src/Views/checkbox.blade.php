@@ -15,5 +15,5 @@
         <i></i>
         <span class="name">{{ $label ?? '' }}</span>
     </label>
-    @include('blade_manager::helpers.error')
+    @include('blade_manager::error')
 </div>

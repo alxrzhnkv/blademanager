@@ -58,7 +58,7 @@ class BladeDirectiveManager
     protected function registerLabelDirective()
     {
         Blade::directive('label', function ($expression) {
-            return $this->render('core::helpers.label', $expression);
+            return $this->render('blade_manager::label', $expression);
         });
     }
 
@@ -69,7 +69,7 @@ class BladeDirectiveManager
     protected function registerStaticDirective()
     {
         Blade::directive('static', function ($expression) {
-            return $this->render('core::helpers.static', $expression);
+            return $this->render('blade_manager::static', $expression);
         });
     }
 
@@ -80,7 +80,7 @@ class BladeDirectiveManager
     protected function registerCheckboxDirective()
     {
         Blade::directive('checkbox', function ($expression) {
-            return $this->render('core::helpers.checkbox', $expression);
+            return $this->render('blade_manager::checkbox', $expression);
         });
     }
 
@@ -91,7 +91,7 @@ class BladeDirectiveManager
     protected function registerDateDirective()
     {
         Blade::directive('date', function ($expression) {
-            return $this->render('core::helpers.date', $expression);
+            return $this->render('blade_manager::date', $expression);
         });
     }
 
@@ -102,7 +102,7 @@ class BladeDirectiveManager
     protected function registerInputDirective()
     {
         Blade::directive('input', function ($expression) {
-            return $this->render('core::helpers.input', $expression);
+            return $this->render('blade_manager::input', $expression);
         });
     }
 
@@ -113,7 +113,7 @@ class BladeDirectiveManager
     protected function registerSelectDirective()
     {
         Blade::directive('select', function ($expression) {
-            return $this->render('core::helpers.select', $expression);
+            return $this->render('blade_manager::select', $expression);
         });
     }
 
@@ -124,7 +124,7 @@ class BladeDirectiveManager
     protected function registerTextareaDirective()
     {
         Blade::directive('textarea', function ($expression) {
-            return $this->render('core::helpers.textarea', $expression);
+            return $this->render('blade_manager::textarea', $expression);
         });
     }
 
@@ -135,7 +135,7 @@ class BladeDirectiveManager
     protected function registerCreateButtonDirective()
     {
         Blade::directive('createButton', function ($expression) {
-            return $this->render('core::helpers.button_create', $expression);
+            return $this->render('blade_manager::button_create', $expression);
         });
     }
 
@@ -146,7 +146,7 @@ class BladeDirectiveManager
     protected function registerEditButtonDirective()
     {
         Blade::directive('editButton', function ($expression) {
-            return $this->render('core::helpers.button_edit', $expression);
+            return $this->render('blade_manager::button_edit', $expression);
         });
     }
 
@@ -157,7 +157,7 @@ class BladeDirectiveManager
     protected function registerShowButtonDirective()
     {
         Blade::directive('showButton', function ($expression) {
-            return $this->render('core::helpers.button_show', $expression);
+            return $this->render('blade_manager::button_show', $expression);
         });
     }
 
@@ -168,7 +168,7 @@ class BladeDirectiveManager
     protected function registerSaveButtonDirective()
     {
         Blade::directive('saveButton', function ($expression) {
-            return $this->render('core::helpers.button_save', $expression);
+            return $this->render('blade_manager::button_save', $expression);
         });
     }
 
@@ -179,7 +179,7 @@ class BladeDirectiveManager
     protected function registerDeleteButtonDirective()
     {
         Blade::directive('deleteButton', function ($expression) {
-            return $this->render('core::helpers.button_delete', $expression);
+            return $this->render('blade_manager::button_delete', $expression);
         });
     }
 
@@ -190,7 +190,7 @@ class BladeDirectiveManager
     protected function registerBackButtonDirective()
     {
         Blade::directive('backButton', function ($expression) {
-            return $this->render('core::helpers.button_back', $expression);
+            return $this->render('blade_manager::button_back', $expression);
         });
     }
 
