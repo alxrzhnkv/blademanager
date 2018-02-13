@@ -22,7 +22,8 @@ class BladeDirectiveManager
 
         // Form fields
         $this->registerCheckboxDirective();
-        $this->registerDateDirective();
+        $this->registerDatePickerDirective();
+        $this->registerTimePickerDirective();
         $this->registerInputDirective();
         $this->registerSelectDirective();
         $this->registerTextareaDirective();
@@ -86,12 +87,23 @@ class BladeDirectiveManager
 
 
     /**
-     * Date directive
+     * Date picker directive
      */
-    protected function registerDateDirective()
+    protected function registerDatePickerDirective()
     {
-        Blade::directive('date', function ($expression) {
-            return $this->render('blade_manager::date', $expression);
+        Blade::directive('datePicker', function ($expression) {
+            return $this->render('blade_manager::date_picker', $expression);
+        });
+    }
+
+
+    /**
+     * Time picker directive
+     */
+    protected function registerTimePickerDirective()
+    {
+        Blade::directive('timePicker', function ($expression) {
+            return $this->render('blade_manager::time_picker', $expression);
         });
     }
 
