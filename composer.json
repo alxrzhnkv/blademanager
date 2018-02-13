@@ -1,0 +1,26 @@
+{
+    "name": "bespoke/blademanager",
+    "description": "Provides custom blade directives inc input, textarea, select, checkbox and buttons for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["blade", "directive", "form", "inputs"],
+    "authors": [
+        {
+            "name": "Stuart Elliott",
+            "email": "stuart.elliott30@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/view": "~5",
+        "illuminate/events": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bespoke\\BladeManager\\": "src/"
+        }
+    },
+    "files": [
+        "vendor/illuminate/support/helpers.php"
+    ]
+}
