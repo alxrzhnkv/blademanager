@@ -20,7 +20,7 @@ This package is actively being developed and we would like to get feedback to im
 Run the following to include this via Composer
 
 ```
-composer require backup-manager/laravel
+composer require bespoke/blademanager
 ```
 
 
