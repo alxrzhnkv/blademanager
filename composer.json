@@ -22,5 +22,12 @@
     },
     "files": [
         "vendor/illuminate/support/helpers.php"
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bespoke\\BladeManager\\BladeManagerServiceProvider"
+            ],
+        }
+    },
 }
