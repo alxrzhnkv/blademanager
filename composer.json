@@ -10,7 +10,7 @@
             "email": "stuart.elliott30@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "illuminate/view": "~5",
         "illuminate/events": "~5"
