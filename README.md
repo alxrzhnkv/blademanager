@@ -6,10 +6,12 @@ Provides custom blade directives inc input, textarea, select, checkbox and butto
 This package is actively being developed and we would like to get feedback to improve it. Please feel free to submit feedback.
 
 
+
 ## Requirements
 * PHP 5.5
 * Laravel
 * composer
+
 
 
 ## Installation
@@ -21,6 +23,7 @@ Run the following to include this via Composer
 composer require backup-manager/laravel
 ```
 
+
 ### Configuration
 
 #### Laravel 5
@@ -29,6 +32,7 @@ To install into a Laravel 5 project, first do the composer install then add the 
 ```
 Bespoke\BladeManager\BladeManagerServiceProvider::class,
 ```
+
 
 
 ## Usage
@@ -62,7 +66,7 @@ Bespoke\BladeManager\BladeManagerServiceProvider::class,
 ```
 @checkbox([
     'label' => 'Has Driving License',
-    'name' => 'has_driving_license',
+    'name'  => 'has_driving_license',
     'value' => $user->has_driving_license
 ])
 ```
