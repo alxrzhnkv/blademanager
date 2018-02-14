@@ -8,8 +8,8 @@ This package is actively being developed and we would like to get feedback to im
 
 
 ## Requirements
-* PHP 5.5
-* Laravel
+* PHP 7.0
+* Laravel 5.5
 * composer
 
 
